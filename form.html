@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<main>
+<body>
+<h1>UMSI Advising</h1>
+<form action="https://formspree.io/f/mkgnjrzd" method="POST"> 
+        <fieldset>
+            <legend>UMSI Advising Interest Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program">
+
+            <div class="radio-group">
+                <p>General Available Time for Advising Meetings:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <label for="other-availability">Specific Available Time:</label>
+            <input type="text" id="other-availability" name="other-availability">
+
+            <div class="checkbox-group">
+                <p>Topics To Be Discussed:</p>
+                <input type="checkbox" id="classes" name="topics" value="classes">
+                <label for="classes">Classes</label>
+
+                <input type="checkbox" id="add_drop" name="topics" value="add_drop">
+                <label for="add/drop">Add/Drop Deadlines</label>
+
+                <input type="checkbox" id="career" name="topics" value="career">
+                <label for="career">Career Path</label>
+
+                <input type="checkbox" id="internships" name="topics" value="internships">
+                <label for="internships">Internships</label>
+            </div>
+
+            <label for="other-topics">Other Topic of Discussion:</label>
+            <input type="text" id="other-topics" name="other-topics">
+
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</main>
+</html>
